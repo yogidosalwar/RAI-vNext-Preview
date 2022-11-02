@@ -1,0 +1,12 @@
+azure-common
+azure-ai-ml~=1.0.0
+mltable==0.1.0b4
+azureml_dataprep
+azureml_dataprep_rslex
+responsibleai~=0.23.0
+raiwidgets~=0.23.0
+jupyter
+pandas
+pyarrow
+shap
+xgboost
