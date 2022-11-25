@@ -92,9 +92,25 @@ def load_mltable(mltable_path: str) -> pd.DataFrame:
     return df
 
 
-def load_parquet(parquet_path: str) -> pd.DataFrame:
-    _logger.info("Loading parquet file: {0}".format(parquet_path))
-    df = pd.read_parquet(parquet_path)
+# def load_parquet(parquet_path: str) -> pd.DataFrame:
+#     _logger.info("Loading parquet file: {0}".format(parquet_path))
+#     df = pd.read_parquet(parquet_path)
+#     return df
+
+
+# def load_dataset(dataset_path: str) -> pd.DataFrame:
+#     _logger.info(f"Attempting to load: {dataset_path}")
+#     df = load_mltable(dataset_path)
+#     if df is None:
+#         df = load_parquet(dataset_path)
+
+#     print(df.dtypes)
+#     print(df.head(10))
+#     return df
+
+def load_csv(csv_path: str) -> pd.DataFrame:
+    _logger.info("Loading parquet file: {0}".format(csv_path))
+    df = pd.read_csv(csv_path)
     return df
 
 
@@ -102,11 +118,12 @@ def load_dataset(dataset_path: str) -> pd.DataFrame:
     _logger.info(f"Attempting to load: {dataset_path}")
     df = load_mltable(dataset_path)
     if df is None:
-        df = load_parquet(dataset_path)
+        df = load_csv(dataset_path)
 
     print(df.dtypes)
     print(df.head(10))
     return df
+
 
 
 def load_dashboard_info_file(input_port_path: str) -> Dict[str, str]:
