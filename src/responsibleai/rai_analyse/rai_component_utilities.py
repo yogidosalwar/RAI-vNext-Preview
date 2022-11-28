@@ -109,7 +109,7 @@ def load_mltable(mltable_path: str) -> pd.DataFrame:
 #     return df
 
 def load_csv(csv_path: str) -> pd.DataFrame:
-    _logger.info("Loading parquet file: {0}".format(csv_path))
+    _logger.info("Loading csv file: {0}".format(csv_path))
     df = pd.read_csv(csv_path)
     return df
 

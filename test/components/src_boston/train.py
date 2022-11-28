@@ -75,7 +75,8 @@ def main(args):
 
     # Read in data
     print("Reading data")
-    train_dataset = pd.read_parquet(args.training_data)
+    # train_dataset = pd.read_parquet(args.training_data)
+    train_dataset = pd.read_csv(args.training_data)
 
     # Drop the labeled column to get the training set.
     y_train = train_dataset[args.target_column_name]

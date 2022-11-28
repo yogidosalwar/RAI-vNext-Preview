@@ -4,3 +4,4 @@ paths:
   - file: ./adult_test.parquet
 transformations:
   - read_parquet
+  - read_csv

@@ -34,9 +34,16 @@ def parse_args():
     return args
 
 
-def load_dataset(parquet_path: str):
-    _logger.info("Loading parquet file: {0}".format(parquet_path))
-    df = pd.read_parquet(parquet_path)
+# def load_dataset(parquet_path: str):
+#     _logger.info("Loading parquet file: {0}".format(parquet_path))
+#     df = pd.read_parquet(parquet_path)
+#     print(df.dtypes)
+#     print(df.head(10))
+#     return df
+
+def load_dataset(csv_path: str):
+    _logger.info("Loading parquet file: {0}".format(csv_path))
+    df = pd.read_csv(csv_path)
     print(df.dtypes)
     print(df.head(10))
     return df
