@@ -52,7 +52,7 @@ def parse_args():
 
     parser.add_argument("--target_column_name", type=str, required=True)
 
-    parser.add_argument("--maximum_rows_for_test_dataset", type=int, default=5000)
+    parser.add_argument("--maximum_rows_for_test_dataset", type=int, default=10000)
 
     parser.add_argument(
         "--categorical_column_names", type=str, help="Optional[List[str]]"
