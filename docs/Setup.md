@@ -18,7 +18,9 @@ In the following, we assume that you have access to an AzureML workspace.
 8. Restart your shell, and make sure that the `conda` commands are available
 9. Clone the git repo 
 ```powershell
-git clone https://github.com/Azure/RAI-vNext-Preview
+# git clone https://github.com/Azure/RAI-vNext-Preview
+git clone https://github.com/yogidosalwar/RAI-vNext-Preview
+
 cd RAI-vNext-Preview
 ```
 10. Run the install script
