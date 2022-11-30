@@ -6,7 +6,7 @@ inputs:
   train_dataset_id: tabular_train_adult_1646682459:1
   test_dataset_id: tabular_test_adult_1646682460:1
   target_column_name: income
-  maximum_rows_for_test_dataset: 5000
+  maximum_rows_for_test_dataset: 10000
   categorical_column_names: '["Race", "Sex", "Workclass", "Marital Status", "Country", "Occupation"]' # Optional[List[str]]
   classes: '[]'  # Optional[List[str]]
   # ------

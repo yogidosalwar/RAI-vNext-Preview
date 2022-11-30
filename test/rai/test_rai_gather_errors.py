@@ -61,7 +61,7 @@ class TestRAIGatherErrors:
                 test_dataset=test_data,
                 target_column_name=target_column_name,
                 categorical_column_names='["Race", "Sex", "Workclass", "Marital Status", "Country", "Occupation"]',
-                maximum_rows_for_test_dataset=5000,  # Should be default
+                maximum_rows_for_test_dataset=10000,  # Should be default
                 classes="[]",  # Should be default
             )
             construct1_job.set_limits(timeout=Timeouts.DEFAULT_TIMEOUT)
@@ -74,7 +74,7 @@ class TestRAIGatherErrors:
                 test_dataset=test_data,
                 target_column_name=target_column_name,
                 categorical_column_names='["Race", "Sex", "Workclass", "Marital Status", "Country", "Occupation"]',
-                maximum_rows_for_test_dataset=5000,  # Should be default
+                maximum_rows_for_test_dataset=10000,  # Should be default
                 classes="[]",  # Should be default
             )
             construct2_job.set_limits(timeout=Timeouts.DEFAULT_TIMEOUT)
@@ -179,7 +179,7 @@ class TestRAIGatherErrors:
                 test_dataset=test_data,
                 target_column_name=target_column_name,
                 categorical_column_names='["Race", "Sex", "Workclass", "Marital Status", "Country", "Occupation"]',
-                maximum_rows_for_test_dataset=5000,  # Should be default
+                maximum_rows_for_test_dataset=10000,  # Should be default
                 classes="[]",  # Should be default
             )
             construct_job.set_limits(timeout=Timeouts.DEFAULT_TIMEOUT)
