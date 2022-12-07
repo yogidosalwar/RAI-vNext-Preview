@@ -19,9 +19,10 @@ In the following, we assume that you have access to an AzureML workspace.
 9. Clone the git repo 
 ```powershell
 # git clone https://github.com/Azure/RAI-vNext-Preview
-git clone https://github.com/yogidosalwar/RAI-vNext-Preview
+git clone https://github.com/yogidosalwar/Responsible_AI
 
-cd RAI-vNext-Preview
+#cd RAI-vNext-Preview
+cd Responsible_AI
 ```
 10. Run the install script
 ```bash

@@ -74,7 +74,7 @@ def parse_args():
     # return args
     return args
 
-
+print("------ yogi Creating Responsible AI ----")
 def create_constructor_arg_dict(args):
     """Create a kwarg dict for RAIInsights constructor
 
@@ -91,10 +91,12 @@ def create_constructor_arg_dict(args):
     )
 
     result["target_column"] = args.target_column_name
+    print("target column name :", result["target_column"])
     result["task_type"] = args.task_type
     result["categorical_features"] = cat_col_names
     result["classes"] = class_names
     result["maximum_rows_for_test"] = args.maximum_rows_for_test_dataset
+    print("result : ", result)
 
     return result
 
@@ -149,8 +151,10 @@ def main(args):
         )
 
     constructor_args = create_constructor_arg_dict(args)
+    print(" constructor_args :", constructor_args)
 
     # Make sure that it actually loads
+    print("Make sure that it actually loads")
     _logger.info("Creating RAIInsights object")
     _ = RAIInsights(
         model=model_estimator, train=train_df, test=test_df, **constructor_args
